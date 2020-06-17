@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('main-content')
-<h1 class="text-primary mb-4 text-center">{{$subject->name}}</h1>
+    <h1 class="text-primary mb-4 text-center">{{$subject->name}}</h1>
     <section class="subjects">
         <table class="table">
             <thead>
