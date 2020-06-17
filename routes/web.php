@@ -12,5 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', 'HomeController@index');
+// Homepage
+Route::get('/', 'HomeController@index')->name('home');
+// Subjects
+Route::resource('subjects', 'SubjectController');

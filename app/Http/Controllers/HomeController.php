@@ -8,15 +8,15 @@ class HomeController extends Controller
 {
     public function index() {
         // ALL DATA TABLE
-        //$students = Student::all();
+        $students = Student::all();
         // WHERE
         //$students = Student::where('id', 2)->get();
         //$students = Student::where('id', '!=', 2)->get();
         //$students = Student::where('name', 'Marco Dubito')->get();
-        $students = Student::where('id', '!=', 2)
+        /*$students = Student::where('id', '!=', 2)
             ->orderBy('name', 'asc')
             ->limit(2)
-            ->get();
+            ->get();*/
         //$students = Student::orderBy('name', 'asc')->get();
         // FIRST: necessario l'inserimento in un array poichè non otteniamo una collezione di oggetti su cui ciclare ma un'unica entità
         //$students[] = Student::where('id', '<>', 1)->first();

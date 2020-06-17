@@ -1,23 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>laravel-base-crud</title>
-</head>
-<body>
-    <header>
-        <h1>Laravel Eloquent ORM</h1>
-    </header>
-    <main>
-        <h2>Students</h2>
-        @foreach ($students as $student)
-            <div class="student">
-                <h4>{{$student->name}}</h4>
-                <p>{{$student->description}}</p>
-            </div>
-        @endforeach
-    </main>
-</body>
-</html>
+@extends('layouts.main')
+@section('main-content')
+<h1 class="text-primary mb-4 text-center">HOMEPAGE</h1>
+    <section class="students">
+        <h2 class="mb-4 text-center">Students List</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Number</th>
+                    <th>Name</th>
+                    <th>Description</th>    
+                </tr>
+            </thead>
+            <tbody>
+                @foreach ($students as $student)
+                <tr>
+                    <td>{{$student->id}}</td>
+                    <td>{{$student->name}}</td>
+                    <td>{{$student->description}}</td>
+                </tr>
+                @endforeach
+            </tbody>
+        </table>    
+    </section>
+@endsection
