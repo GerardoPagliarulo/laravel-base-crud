@@ -10,6 +10,7 @@
                     <th>Description</th>
                     <th>Created at</th>
                     <th>Updated at</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -19,6 +20,9 @@
                     <td>{{$subject->description}}</td>
                     <td>{{$subject->created_at}}</td>
                     <td>{{$subject->updated_at}}</td>
+                    <td>
+                        <a class="btn btn-primary" href="{{route('subjects.edit', $subject->id)}}">Edit</a>
+                    </td>
                 </tr>
             </tbody>
         </table>    

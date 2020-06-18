@@ -14,10 +14,12 @@
         @csrf
         @method('POST')
         <div class="form-group">
-            <input class="form-control" type="text" name="name" placeholder="Subject name">
+            <input class="form-control" type="text" name="name" 
+            value="{{old('name')}}" placeholder="Subject name">
         </div>
         <div class="form-group">
-            <input class="form-control" type="text" name="description" placeholder="Subject description">
+            <input class="form-control" type="text" name="description" 
+            value="{{old('description')}}" placeholder="Subject description">
         </div>
         <input class="btn btn-primary" type="submit" value="Add">
     </form>
