@@ -14,7 +14,7 @@ class AssistantsTableSeeder extends Seeder
     public function run(Faker $faker)
     {
         // Clean fake data previos new run
-        Assistant::truncate();
+        //Assistant::truncate();
         // Faker
         $records = 7;
         for ($i = 0; $i < $records; $i++) { 
