@@ -23,6 +23,12 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('subjects.create')}}">Add Subject</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('teachers.index')}}">Teachers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('assistants.index')}}">Assistants</a>
+                </li>
             </ul>
         </nav>
     </header>

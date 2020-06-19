@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'HomeController@index')->name('home');
 // Subjects
 Route::resource('subjects', 'SubjectController');
+// Teachers
+Route::resource('teachers', 'TeacherController');
+// Assistants
+Route::resource('assistants', 'AssistantController');

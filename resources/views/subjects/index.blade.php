@@ -5,7 +5,7 @@
             {{session('deleted')}} è stata cancellata.
         </div>
     @endif
-    <h1 class="text-primary mb-4 text-center">SUBJECTS</h1>
+    <h1 class="text-primary mb-4 text-center">Subjects</h1>
     <section class="subjects">
         <table class="table">
             <thead>

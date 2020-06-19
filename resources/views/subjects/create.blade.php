@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('main-content')
-    <h1 class="text-primary mb-4 text-center">ADD NEW SUBJECT</h1>
+    <h1 class="text-primary mb-4 text-center">Add new subjects</h1>
     @if ($errors->any())
         <div class="alert alert-danger">
             <ul>
